@@ -19,9 +19,26 @@ class HomePage extends StatelessWidget {
     appBar: AppBar(
       title: const Text('Awesome App'),
     ),
-    body: Container(
-      child: const Text('Hello world'),
+    body: Center(
+      child: Container(
+        padding: const EdgeInsets.all(9),
+        width: 100,
+        height: 100,
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          color: Colors.amber,
+          borderRadius: BorderRadius.circular(10),
+          boxShadow: [
+            BoxShadow(
+                 color:Colors.grey,
+                 blurRadius: 10,
+            ),
+           
+          ]
+        ),
+        child: const Text('i am a box')
+      ),
     ),
-   );
+   ); 
 }
 }
